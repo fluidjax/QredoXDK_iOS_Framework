@@ -14,6 +14,8 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		83DC60A31D0AB1FA008342C3 /* QredoXDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83DC60A21D0AB1F9008342C3 /* QredoXDK.framework */; };
+		83DC60A41D0AB1FA008342C3 /* QredoXDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 83DC60A21D0AB1F9008342C3 /* QredoXDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FA625AB7D9CC4E821D219D22 /* Pods_QredoXDK_iOS_Framework_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BE3D2500F8D49E47AA7FE00 /* Pods_QredoXDK_iOS_Framework_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +28,20 @@
 			remoteInfo = QredoXDK_iOS_Framework;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		83DC60A51D0AB1FA008342C3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				83DC60A41D0AB1FA008342C3 /* QredoXDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		320F84AD01E77054F8115709 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -44,6 +60,7 @@
 		607FACE51AFB9204008FA782 /* QredoXDK_iOS_Framework_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QredoXDK_iOS_Framework_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		83DC60A21D0AB1F9008342C3 /* QredoXDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QredoXDK.framework; sourceTree = "<group>"; };
 		DEDCB2BDABB247333A9D1504 /* Pods-QredoXDK_iOS_Framework_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QredoXDK_iOS_Framework_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QredoXDK_iOS_Framework_Example/Pods-QredoXDK_iOS_Framework_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E0CE22DDA959B0BD0AF5813B /* Pods-QredoXDK_iOS_Framework_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QredoXDK_iOS_Framework_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-QredoXDK_iOS_Framework_Example/Pods-QredoXDK_iOS_Framework_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E3BC387376D576E1567E6846 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -54,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83DC60A31D0AB1FA008342C3 /* QredoXDK.framework in Frameworks */,
 				0E629B09FBF50D8A5634E9E1 /* Pods_QredoXDK_iOS_Framework_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,6 +90,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				83DC60A21D0AB1F9008342C3 /* QredoXDK.framework */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for QredoXDK_iOS_Framework */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -172,6 +191,7 @@
 				607FACCE1AFB9204008FA782 /* Resources */,
 				D73D23347C322D82B87FD1FF /* 📦 Embed Pods Frameworks */,
 				B94578047325428A475EE46E /* 📦 Copy Pods Resources */,
+				83DC60A51D0AB1FA008342C3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -489,6 +509,10 @@
 			baseConfigurationReference = DEDCB2BDABB247333A9D1504 /* Pods-QredoXDK_iOS_Framework_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = QredoXDK_iOS_Framework/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -502,6 +526,10 @@
 			baseConfigurationReference = E0CE22DDA959B0BD0AF5813B /* Pods-QredoXDK_iOS_Framework_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = QredoXDK_iOS_Framework/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;

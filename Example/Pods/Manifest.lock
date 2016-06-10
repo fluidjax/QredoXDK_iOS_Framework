@@ -1,0 +1,16 @@
+PODS:
+  - QredoXDK_iOS_Framework (0.1.0)
+
+DEPENDENCIES:
+  - QredoXDK_iOS_Framework (from `../`)
+
+EXTERNAL SOURCES:
+  QredoXDK_iOS_Framework:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  QredoXDK_iOS_Framework: feb88345dee45f4c42743e114c481d865574be84
+
+PODFILE CHECKSUM: 3b94133613df1b4bee69baedcaa029c8eecd5d19
+
+COCOAPODS: 1.0.0

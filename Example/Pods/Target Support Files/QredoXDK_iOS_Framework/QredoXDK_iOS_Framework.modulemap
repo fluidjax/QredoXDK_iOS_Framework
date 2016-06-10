@@ -1,0 +1,6 @@
+framework module QredoXDK_iOS_Framework {
+  umbrella header "QredoXDK_iOS_Framework-umbrella.h"
+
+  export *
+  module * { export * }
+}
