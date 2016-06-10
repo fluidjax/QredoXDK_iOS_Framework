@@ -9,6 +9,8 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/fluidjax/QredoXDK_iOS_Framework.git', :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
   s.source_files = 'QredoXDK_iOS_Framework/Classes/**/*'
-  s.vendored_frameworks = 'Example/QredoXDK.framework'
+  s.vendored_frameworks = 'QredoXDK.framework'
+  s.resource = 'QredoXDK.framework'
+  s.frameworks = 'QredoXDK.framework'
   s.ios.public_header_files  = 'QredoXDK.framework/Headers/*.h'
 end
