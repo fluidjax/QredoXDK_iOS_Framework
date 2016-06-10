@@ -10,5 +10,5 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.source_files = 'QredoXDK_iOS_Framework/Classes/**/*'
   s.vendored_frameworks = 'Example/QredoXDK.framework'
-  
+  s.ios.public_header_files  = 'QredoXDK.framework/Headers/*.h'
 end
