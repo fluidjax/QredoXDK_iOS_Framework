@@ -11,6 +11,6 @@ Pod::Spec.new do |s|
   s.source_files = 'QredoXDK_iOS_Framework/Classes/**/*'
   s.vendored_frameworks = 'QredoXDK.framework'
   s.resource = 'QredoXDK.framework'
-  s.frameworks = 'QredoXDK.framework'
-  s.ios.public_header_files  = 'QredoXDK.framework/Headers/*.h'
+  s.frameworks = 'QredoXDK'
+#  s.ios.public_header_files  = 'QredoXDK.framework/Headers/*'
 end
