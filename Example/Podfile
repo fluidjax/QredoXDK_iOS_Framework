@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'QredoXDK_iOS_Framework_Example' do
+  pod 'QredoXDK_iOS_Framework', :path => '../'
+
+  target 'QredoXDK_iOS_Framework_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
